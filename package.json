@@ -1,5 +1,5 @@
 {
-  "name": "@risingstack/opentracing-auto",
+  "name": "@carbon3d/opentracing-auto",
   "version": "1.5.2",
   "description": "Out of the box OpenTracing instrumentation for Node.js",
   "main": "src/index.js",
@@ -11,16 +11,16 @@
     "example-server1": "node example/server1",
     "example-server2": "node example/server2"
   },
-  "author": "RisingStack, Inc.",
+  "author": "Carbon, Inc.",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RisingStack/opentracing-auto.git"
+    "url": "git+https://github.com/carbon3d/opentracing-auto.git"
   },
   "bugs": {
-    "url": "https://github.com/RisingStack/opentracing-auto/issues"
+    "url": "https://github.com/carbon3d/opentracing-auto/issues"
   },
-  "homepage": "https://github.com/RisingStack/opentracing-auto#readme",
+  "homepage": "https://github.com/carbon3d/opentracing-auto#readme",
   "keywords": [
     "instrumentation",
     "opentracing",
