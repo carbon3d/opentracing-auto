@@ -1,6 +1,6 @@
 # opentracing-auto
 
-[![Build Status](https://travis-ci.org/RisingStack/opentracing-auto.svg?branch=master)](https://travis-ci.org/RisingStack/opentracing-auto)  
+[![Build Status](https://travis-ci.org/carbon3d/opentracing-auto.svg?branch=master)](https://travis-ci.org/carbon3d/opentracing-auto)
 
 Out of the box distributed tracing for [Node.js](https://nodejs.org) applications with OpenTracing.
 Support multiple Tracers.
