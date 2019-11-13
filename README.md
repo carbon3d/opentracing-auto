@@ -19,12 +19,12 @@ Support multiple Tracers.
 ## Getting started
 
 ```sh
-npm install @risingstack/opentracing-auto
+npm install @carbon3d/opentracing-auto
 ```
 
 ```js
 // must be in the first two lines of your application
-const Instrument = require('@risingstack/opentracing-auto')
+const Instrument = require('@carbon3d/opentracing-auto')
 const { Tracer } = require('opentracing') // or any OpenTracing compatible tracer like jaeger-client
 const tracer1 = new Tracer()
 const tracer2 = new Tracer()
