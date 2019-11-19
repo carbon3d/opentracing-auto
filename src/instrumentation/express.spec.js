@@ -16,7 +16,8 @@ describe('instrumentation: express', () => {
     mockSpan = {
       setTag: this.sandbox.spy(),
       log: this.sandbox.spy(),
-      finish: this.sandbox.spy()
+      finish: this.sandbox.spy(),
+      context: () => {return {traceIdStr: 'cd085dc813af7cb1'}}
     }
 
     this.sandbox.stub(cls, 'startRootSpan').callsFake(() => mockSpan)
