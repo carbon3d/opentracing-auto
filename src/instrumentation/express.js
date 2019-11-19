@@ -38,7 +38,9 @@ function patch (express, tracers) {
         [Tags.HTTP_URL]: url,
         [Tags.HTTP_METHOD]: req.method
       })
-
+      if (spans[0] && spans[0].context()) {
+        req.traceId = spans[0].context().traceIdStr
+      }
       if (req.connection.remoteAddress) {
         spans.forEach((span) => span.log({ peerRemoteAddress: req.connection.remoteAddress }))
       }
