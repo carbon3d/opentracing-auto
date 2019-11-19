@@ -15,12 +15,14 @@ describe('instrumentation: expressError', () => {
   beforeEach(function () {
     tracer = new Tracer()
     mockRootSpan = {
-      setTag: this.sandbox.spy()
+      setTag: this.sandbox.spy(),
+      context: () => {return {traceIdStr: 'cd085dc813af7cb1'}}
     }
     mockChildSpan = {
       setTag: this.sandbox.spy(),
       log: this.sandbox.spy(),
-      finish: this.sandbox.spy()
+      finish: this.sandbox.spy(),
+      context: () => {return {traceIdStr: 'cd085dc813af7cb1'}}
     }
 
     this.sandbox.stub(cls, 'getRootSpan').callsFake(() => mockRootSpan)
