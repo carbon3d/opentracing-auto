@@ -1,6 +1,6 @@
 {
   "name": "c3d-opentracing-auto",
-  "version": "1.5.5",
+  "version": "1.5.6",
   "description": "Out of the box OpenTracing instrumentation for Node.js",
   "main": "src/index.js",
   "scripts": {
